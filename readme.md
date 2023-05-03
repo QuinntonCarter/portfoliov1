@@ -1,2 +1,2 @@
 ## 2023
-Updated MVP portfolio for 
+Updated MVP portfolio
