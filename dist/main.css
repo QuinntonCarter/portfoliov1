@@ -1,0 +1,223 @@
+:root {
+    --main-font: 'Space Mono', monospace;
+    --main-text-color: pink;
+    --section-title-size: 55px;
+    --main-text-size: 16px;
+}
+* {
+    line-height: 3vh;
+    cursor: crosshair;
+    padding: auto;
+    margin: 0;
+    font-family: var(--main-font)
+}
+
+.mainContainer {
+    height: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    animation: waveringBlur 2.5s infinite alternate;
+}
+
+@keyframes waveringBlur {
+    from {
+        -webkit-backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1.9px);
+    }
+    to {
+        -webkit-backdrop-filter: blur(3.5px);
+        backdrop-filter: blur(4.3px);
+    }
+}
+
+ul {
+    height: 80%;
+    justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+/*  */
+
+canvas.webGL {
+    position: fixed;
+    outline: none;
+    top: 0;
+    left: 0;
+}
+
+html {
+    background-color: cornsilk;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: cornsilk;
+}
+
+body, html, :root {
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    height: 9vh;
+    max-width: 100%;
+    /* background: rgba(255, 255, 255, 0.442); */
+    color: white;
+    top: 0;
+    background: linear-gradient(150deg, pink 20%, goldenrod 50%, transparent) no-repeat;
+    /* background: transparent;
+    backdrop-filter: blur(1.5px); */
+}
+
+.header--title {
+    font-weight: 100;
+}
+
+.header--subtitle {
+    /* mix-blend-mode: color-burn; */
+}
+
+.header--buttons > h4 {
+    color: black;
+    animation: glow alternate infinite 2s;
+}
+
+@keyframes glow {
+    from {
+        color: black
+    }
+    to {
+        color: blue;
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 57%;
+    max-height: fit-content;
+    position: relative;
+    padding: 2vh;
+    color: gray;
+    background: rgba(255, 255, 255, 0.521);
+    align-self: flex-start;
+    margin: 5% 2% auto 2%;
+    text-align: left;
+}
+
+section:nth-child(2n){
+    align-self: flex-end;
+    text-align: right;
+}
+
+h3 {
+    font-size: var(--section-title-size);
+    margin: 0 0 2vw 0;
+}
+
+p {
+    font-size: var(--main-text-size)
+}
+/* about me */
+section.about {
+}
+
+/* experience */
+
+
+/* projects */
+section.projects {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.projects--list {
+    display: -ms-grid;
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    gap: 2%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects--list-item:hover {
+    transform: scale(1.5) translateY(-50%); 
+}
+
+.projects--list-item:hover > p {
+    font-weight: 600;
+    display: block;
+    font-size: 5px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
+    background: #ffffffb0;
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    line-height: normal;
+    color: blue;
+}
+.projects--list-item:nth-child(3):hover > p{
+    width: 130%
+}
+
+.projects--list-item:hover > img {
+    filter: blur(2)
+}
+
+.projects--list-item > img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 100%;
+    height: 25vh;
+    /* transition: transform 300ms; */
+}
+
+.projects--list-item {
+    transition: transform 300ms;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.projects--list-item > p {
+    display: none;
+}
+.projects--login {
+    background: rgba(128, 128, 128, 0.521);
+    color: orangered;
+}
+
+.skills {
+    bottom: 10%;
+}
+
+.resume {
+    bottom: 0%;
+    padding: 2vh;
+    position: fixed;
+}
+
+footer {
+    height: 20%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map*/
