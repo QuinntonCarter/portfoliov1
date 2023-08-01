@@ -14,39 +14,65 @@
       src="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Quinnton Carter Portfolio</title>
+    <title>Quinnton Carter</title>
   </head>
   <body>
     <!-- <canvas class="webGL"></canvas> -->
     <div class="mainContainer">
       <header class="header">
-        <div class="header--desc">
+        <!-- <div class="header--desc">
           <h1 class="header--title">Quinnton Carter</h1>
           <h2 class="header--subtitle">full-stack developer</h2>
         </div>
         <div class="header--buttons">
-          <!-- <h4> accessibility mode </h4> -->
+          <h4> accessibility mode </h4>
+          <button type="button">Accessibility mode</button>
+        </div> -->
+        <div class="marquee__container">
+          <!-- <div class="marquee--"> -->
+          <div class="marquee__text">
+            <span> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter // </span>
+            <span aria-hidden="true"> Quinnton Carter </span>
+          </div>
+          <!-- </div> -->
         </div>
       </header>
 
-      <section class="about">
+      <section class="about container-fluid">
         <h3 class="title">about</h3>
-        <!-- <img src="" alt="" /> -->
-        <p>
-          Hello world, I'm a full-stack developer based out of Salt Lake City,
-          Utah.
-        </p>
+        <span class="about--desc">
+          <img
+            class="me"
+            src="./images/portfoliooneTwo.png"
+            alt="Cut out grayscale image of Quinnton"
+          />
+          <p>
+            Hello world, I'm a full-stack developer based out of Salt Lake City,
+            Utah.
+          </p>
+        </span>
       </section>
 
-      <section class="experience">
+      <section class="experience container-fluid">
         <h3 class="title">experience</h3>
+        <!-- * -->
         <p>
           My foundation consists of the MERN stack; MongoDB, ExpressJS, ReactJS,
-          and NodeJS. I completed an internship somewhat recently where I
-          learned about PHP and WordPress development including handcrafting
-          shortcodes for implementation of custom site features as well as
-          creating custom Gutenberg & Elementor blocks.
+          and NodeJS. My goal as a developer is to expand upon my Javascript
+          foundation.
         </p>
+        <!-- * -->
         <details>
           <summary>Full Resume</summary>
           <iframe
@@ -59,13 +85,13 @@
         </details>
       </section>
 
-      <section class="projects">
+      <section class="projects container-fluid">
         <h3 class="title">projects</h3>
         <ul class="projects--list">
           <li class="projects--list-item">
             <img
               src="./thumbnails/alsviewer.png"
-              class="projects--item-img"
+              class="img-fluid img-thumbnail"
               alt="Apex Legends stats app thumbnail"
             />
             <a
@@ -86,7 +112,7 @@
           <li class="projects--list-item">
             <img
               src="./thumbnails/whatchumeme.png"
-              class="projects--item-img"
+              class="img-fluid img-thumbnail"
               alt="whatchu meme app thumbnail"
             />
             <a
@@ -127,7 +153,22 @@
         </ul>
       </section>
       <footer class="footer">
-        <a
+        <div class="marquee__container--footer">
+          <!-- <div class="marquee--"> -->
+          <div class="marquee__text--footer">
+            <span> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+            <span aria-hidden="true"> fullstack developer \\ </span>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- <a
           href=""
           rel="noopener"
           target="_blank"
@@ -140,7 +181,7 @@
           target="_blank"
         >
           github
-        </a>
+        </a> -->
       </footer>
     </div>
   </body>
