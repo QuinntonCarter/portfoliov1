@@ -317,6 +317,7 @@ h3.projects--title {
   text-align: right;
   font-size: var(--project-title-text-size);
   margin: 0;
+  text-decoration: underline;
 }
 
 .projects--description {
@@ -375,6 +376,10 @@ h3.projects--title {
   width: 40%;
   max-width: 40%;
   /* height: 19vw; */
+}
+
+.projects--list-item > a {
+  /* text-decoration: none; */
 }
 
 @media screen and (max-width: 1510px) {
