@@ -129,14 +129,14 @@ header {
 .marquee__text {
   white-space: nowrap;
   will-change: transform;
-  animation: marquee-left 48s linear infinite;
+  animation: marquee-left 45s linear infinite;
 }
 @keyframes marquee-left {
   0% {
     transform: translateZ(0);
   }
   to {
-    transform: translate3d(-69.6%, 0, 0);
+    transform: translate3d(-69.63%, 0, 0);
   }
 }
 
@@ -163,7 +163,7 @@ header {
     transform: translateZ(0);
   }
   to {
-    transform: translate3d(-56%, 0, 0);
+    transform: translate3d(-55.95%, 0, 0);
   }
 }
 
