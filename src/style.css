@@ -97,6 +97,7 @@ header {
 }
 
 .mainContainer {
+  gap: 0.7em;
   height: 90vh;
   max-width: 100vw;
   display: flex;
@@ -210,6 +211,9 @@ section > p {
 section.experience.container-fluid,
 section.about.container-fluid {
   width: 70vw;
+}
+section.about.container-fluid {
+  gap: 0;
 }
 
 span.about--desc {
