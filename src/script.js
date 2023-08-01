@@ -1,24 +1,24 @@
 import "./style.css";
 // use to set marquees to from size based on screen width **
-const sizes = {
-  width: window.innerWidth,
-  height: window.innerHeight,
-  //   scrollPosition: window.scrollY,
-};
-window.addEventListener("resize", () => {
-  // Update sizes
-  sizes.width = window.innerWidth;
-  sizes.height = window.innerHeight;
+// const sizes = {
+//   width: window.innerWidth,
+//   height: window.innerHeight,
+//   //   scrollPosition: window.scrollY,
+// };
+// window.addEventListener("resize", () => {
+//   // Update sizes
+//   sizes.width = window.innerWidth;
+//   sizes.height = window.innerHeight;
 
-  console.log("sizes", sizes);
-  //   // Update camera
-  //   camera.aspect = sizes.width / sizes.height;
-  //   camera.updateProjectionMatrix();
+//   console.log("sizes", sizes);
+//   //   // Update camera
+//   //   camera.aspect = sizes.width / sizes.height;
+//   //   camera.updateProjectionMatrix();
 
-  //   // Update renderer
-  //   renderer.setSize(sizes.width, sizes.height);
-  //   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-});
+//   //   // Update renderer
+//   //   renderer.setSize(sizes.width, sizes.height);
+//   //   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+// });
 
 // window.addEventListener("scroll", () => {
 //   sizes.scrollPosition = window.scrollY;
