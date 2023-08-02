@@ -1,23 +1,31 @@
 import "./style.css";
+const footer = document.getElementById("marqueeFooter");
+const header = document.getElementsByTagName("header");
 // use to set marquees to from size based on screen width **
-// const sizes = {
-//   width: window.innerWidth,
-//   height: window.innerHeight,
-//   //   scrollPosition: window.scrollY,
-// };
-// window.addEventListener("resize", () => {
-//   // Update sizes
-//   sizes.width = window.innerWidth;
-//   sizes.height = window.innerHeight;
+const sizes = {
+  width: window.innerWidth,
+  height: window.innerHeight,
+};
+window.addEventListener("resize", () => {
+  // Update sizes
+  sizes.width = window.innerWidth;
+  sizes.height = window.innerHeight;
 
-//   console.log("sizes", sizes);
-//   //   // Update camera
-//   //   camera.aspect = sizes.width / sizes.height;
-//   //   camera.updateProjectionMatrix();
+  //   footer.style.transform = `translateY${window.innerHeight}`;
+  console.log("sizes", sizes);
+  //   // Update camera
+  //   camera.aspect = sizes.width / sizes.height;
+  //   camera.updateProjectionMatrix();
 
-//   //   // Update renderer
-//   //   renderer.setSize(sizes.width, sizes.height);
-//   //   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  //   // Update renderer
+  //   renderer.setSize(sizes.width, sizes.height);
+  //   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
+
+// window.addEventListener("scroll", () => {
+//   footer.style.transform = `translate(${window.innerHeight})`;
+
+//   console.log("test scroll", window.innerHeight);
 // });
 
 // window.addEventListener("scroll", () => {
