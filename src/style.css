@@ -116,7 +116,7 @@ header {
 .marquee__text {
   white-space: nowrap;
   will-change: transform;
-  animation: marquee-left 45s linear infinite;
+  animation: marquee-left 55s linear infinite;
 }
 @keyframes marquee-left {
   0% {
@@ -129,7 +129,7 @@ header {
 
 .me {
   width: 25%;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .marquee__container--footer {
@@ -209,14 +209,18 @@ span.about--desc {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  text-align-last: justify;
   width: 75%;
   margin: auto;
 }
 
+span.about--desc > p {
+  width: 50%;
+  align-self: flex-end;
+}
+
 /* projects */
 section.projects {
-  width: 70vw;
+  width: 80%;
   row-gap: 1.5em;
   border-bottom: none;
   margin: auto;
@@ -234,25 +238,47 @@ section.projects {
 }
 
 @media screen and (max-width: 768px) {
-  section {
+  /* section {
     padding: 1vh;
     width: 70%;
+    right: 0 !important;
   }
+  section:last-child {
+    right: 0 !important;
+  } */
+
   section > p {
     align-self: center;
   }
-
+  .marquee__text > span {
+    font-size: 1rem;
+    /* margin-top: 1em; */
+    line-height: 3rem;
+  }
   /* about */
+  .me {
+    width: 35%;
+    align-self: center;
+  }
   section.about {
     width: 80%;
+  }
+  span.about--desc > p {
+    align-self: center;
+    width: 100%;
   }
 
   /* experience */
   section.experience {
   }
-
+  .projects--list-item {
+    justify-content: center !important;
+  }
   .projects--list {
-    padding: 5.5vw;
+    /* padding: 5.5vw; */
+  }
+  .projects--list-item {
+    justify-content: center;
   }
 }
 
@@ -281,14 +307,19 @@ section.projects {
     font-size: 50px;
   }
 }
-
-section:last-child {
-  /* border: none; */
+@media screen and (min-width: 769px) {
+  section {
+    right: -10%;
+  }
+  section:last-child {
+    right: 5%;
+  }
 }
 
 h3.title {
   font-size: var(--section-title-size);
   font-weight: 200;
+  text-align: left;
   color: black;
   text-transform: capitalize;
   margin: 0;
@@ -345,8 +376,11 @@ h3.projects--title {
 
 .projects--list-item {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
+}
+.projects--list-item:nth-child(even) {
+  justify-content: right;
 }
 
 .projects--list-item > a > span > img {
