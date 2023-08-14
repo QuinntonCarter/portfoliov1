@@ -317,10 +317,12 @@ section.projects {
 }
 @media screen and (min-width: 769px) {
   section {
-    right: -10%;
+    /* this code is supposed to pull the section to the right.. is problematic  8-14-23 */
+    right: -15%;
   }
   section:last-child {
-    right: 5%;
+    /* this code is supposed to pull the section to the right.. is problematic  8-14-23 */
+    right: -10%;
   }
 }
 
@@ -366,6 +368,10 @@ h3.projects--title {
 
 .projects--item-desc {
   text-align: justify;
+}
+p.projects--item-desc > span {
+  font-weight: 900;
+  font-style: italic;
 }
 
 .projects--list {
