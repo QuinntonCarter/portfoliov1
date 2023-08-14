@@ -318,11 +318,20 @@ section.projects {
 @media screen and (min-width: 769px) {
   section {
     /* this code is supposed to pull the section to the right, keeps reverting to different/previous value.. problematic  8-14-23 */
-    right: -15%;
+    right: -5%;
+  }
+  section.about {
+    /* problematic  8-14-23 */
+    /* right: -10%; */
+  }
+  section.experience {
+    /* problematic  8-14-23 */
+
+    /* right: -5%; */
   }
   section:last-child {
-    /* this code is supposed to pull the section to the right, keeps reverting to different/previous value.. problematic  8-14-23 */
-    right: -10%;
+    /* problematic  8-14-23 */
+    right: 0%;
   }
 }
 
