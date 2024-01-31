@@ -12,7 +12,7 @@ window.addEventListener("resize", () => {
   sizes.height = window.innerHeight;
 
   //   footer.style.transform = `translateY${window.innerHeight}`;
-  console.log("sizes", sizes);
+  // console.log("sizes", sizes);
   //   // Update camera
   //   camera.aspect = sizes.width / sizes.height;
   //   camera.updateProjectionMatrix();

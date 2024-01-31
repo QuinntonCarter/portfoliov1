@@ -245,7 +245,9 @@ section.projects {
 .projects--description > p {
   background-color: #ffffff9e;
   line-height: 2vh;
+  /* max-width: 200px; */
 }
+
 @media screen and (max-width: 999px) {
   .projects--description > p {
     font-size: var(--main-text-size-tablet);
@@ -410,7 +412,7 @@ p.projects--item-desc > span {
   object-fit: contain;
   width: 100%;
   max-width: 53%;
-  max-height: 10vw;
+  max-height: 13vw;
   float: left;
   margin: 1px;
 }
@@ -457,6 +459,11 @@ p.projects--item-desc > span {
   bottom: 0%;
   padding: 2vh;
   position: fixed;
+}
+
+summary {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 footer {
