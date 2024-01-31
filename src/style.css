@@ -319,7 +319,7 @@ section.projects {
 }
 @media screen and (min-width: 769px) {
   section {
-    /* this code is.. problematic  8-14-23 */
+    /* problematic  8-14-23 */
     /* right: -5%; */
   }
   section.about {
@@ -395,6 +395,9 @@ p.projects--item-desc > span {
   .projects--list {
     display: flex;
     flex-direction: row;
+  }
+  .projects--list-item {
+    justify-content: center !important;
   }
 }
 
